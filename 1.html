@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9Г</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 5px;
+        }
+        .gallery-item {
+            margin: 5px;
+        }
+        .gallery-item img {
+            width: 350px;
+            height: 500px;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            width: 350px;
+            height: 50px;
+        }
+        .corner-image {
+            align-self: flex-start;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            width: 350px; 
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+<body style="background-image: url('background-image.jpg');">
+<img src="image33.jpg" alt="Corner Image" class="corner-image" onclick="showInfo('info33')">
+<div class="info" id="info33">Чалых Елена Викторовна: рыбы,51год,26.02,баскетбол</div>
+
+<div class="gallery">
+    <div class="gallery-item" id="item1">
+        <img src="image1.jpg" alt="Image 1" onclick="showInfo('info1')">
+        <div class="info" id="info1">Алиев Артур Валерьевич: весы,15лет,06.10,авиация.</div>
+    </div>
+    <div class="gallery-item" id="item2">
+        <img src="image2.jpg" alt="Image 2" onclick="showInfo('info2')">
+        <div class="info" id="info2">Аскаркызы Амина: рак,14лет,29.06,рисование</div>
+    </div>
+    <div class="gallery-item" id="item3">
+        <img src="image3.jpg" alt="Image 3" onclick="showInfo('info3')">
+        <div class="info" id="info3">Бейбітқызы Махаббат: дева,15лет,05.09,фото</div>
+    </div>
+    <div class="gallery-item" id="item4">
+        <img src="image4.jpg" alt="Image 4" onclick="showInfo('info4')">
+        <div class="info" id="info4">Бейбітқызы Мөлдір: дева,15лет,05.09,моделинг,английский</div>
+    </div>
+    <div class="gallery-item" id="item5">
+        <img src="image5.jpg" alt="Image 5" onclick="showInfo('info5')">
+        <div class="info" id="info5">Горская Александра Алексеевна: дева,15лет,05.09,чтение</div>
+    </div>
+    <div class="gallery-item" id="item6">
+        <img src="image6.jpg" alt="Image 6" onclick="showInfo('info6')">
+        <div class="info" id="info6">Губаев Владислав Иванович: стрелец,15лет,25.11,плаванье</div>
+    </div>
+    <div class="gallery-item" id="item7">
+        <img src="image7.jpg" alt="Image 7" onclick="showInfo('info7')">
+        <div class="info" id="info7">Евтеев Никита Максимович: козерог,15лет,21.12,рисование,видео-игры</div>
+    </div>
+    <div class="gallery-item" id="item8">
+        <img src="image8.jpg" alt="Image 8" onclick="showInfo('info8')">
+        <div class="info" id="info8">Заирова Ася Хакимжановна: телец,16лет,09.05,рисование</div>
+    </div>
+    <div class="gallery-item" id="item9">
+        <img src="image9.jpg" alt="Image 9" onclick="showInfo('info9')">
+        <div class="info" id="info9">Заурова Медина Муслимовна: стрелец,15лет,15.12,волейбол,готовка,пение,танцы</div>
+    </div>
+    <div class="gallery-item" id="item10">
+        <img src="image10.jpg" alt="Image 10" onclick="showInfo('info10')">
+        <div class="info" id="info10">Изисова Аида: рак,15лет,29.06,воллейбол</div>
+    </div>
+    <div class="gallery-item" id="item11">
+        <img src="image11.jpg" alt="Image 11" onclick="showInfo('info11')">
+        <div class="info" id="info11">Кадыров Тимур: водолей,15лет,26.01,IT-технологии </div>
+    </div>
+    <div class="gallery-item" id="item12">
+        <img src="image12.jpg" alt="Image 12" onclick="showInfo('info12')">
+        <div class="info" id="info12">Какеева Роббина Алмаскызы: водолей,15лет,24.01,танцы,волейбол</div>
+    </div>
+    <div class="gallery-item" id="item13">
+        <img src="image13.jpg" alt="Image 13" onclick="showInfo('info13')">
+        <div class="info" id="info13">Кириллов Владислав Григорьевич: телец,15лет,05.14,гейминг</div>
+    </div>
+    <div class="gallery-item" id="item14">
+        <img src="image14.jpg" alt="Image 14" onclick="showInfo('info14')">
+        <div class="info" id="info14">Комбаров Руслан Александрович: козерог,15 лет,22.12,мопед,футбол</div>
+    </div>
+    <div class="gallery-item" id="item15">
+        <img src="image15.jpg" alt="Image 15" onclick="showInfo('info15')">
+        <div class="info" id="info15">Культаева Амина Ерболатовна: скорпион,15лет,05.11,кулинария, </div>
+    </div>
+    <div class="gallery-item" id="item16">
+        <img src="image16.jpg" alt="Image 16" onclick="showInfo('info16')">
+        <div class="info" id="info16">Ли Данияр Балташевич: рак,14лет,01.07,плавание,туризм</div>
+    </div>
+    <div class="gallery-item" id="item17">
+        <img src="image17.jpg" alt="Image 17" onclick="showInfo('info17')">
+        <div class="info" id="info17">Маркович Ирина Сергеевна: рак,15лет,20.07,танцы</div>
+    </div>
+    <div class="gallery-item" id="item18">
+        <img src="image18.jpg" alt="Image 18" onclick="showInfo('info18')">
+        <div class="info" id="info18">Мухсинова Алина Ерлановна: близнецы, 14лет, 19.06,чтение</div>
+    </div>
+    <div class="gallery-item" id="item19">
+        <img src="image19.jpg" alt="Image 19" onclick="showInfo('info19')">
+        <div class="info" id="info19">Насипова Залина Мурадовна: водолей,15лет,09.02,танцы</div>
+    </div>
+    <div class="gallery-item" id="item20">
+        <img src="image20.jpg" alt="Image 20" onclick="showInfo('info20')">
+        <div class="info" id="info20">Немыкин Владислав Олегович: козерог,15лет,31.12,бокс</div>
+    </div>
+<div class="gallery-item" id="item21">
+        <img src="image21.jpg" alt="Image 21" onclick="showInfo('info21')">
+        <div class="info" id="info21">Нурлан Даяна Габиткызы: дева,14лет,07.09,волейбол</div>
+    </div>
+    <div class="gallery-item" id="item22">
+        <img src="image22.jpg" alt="Image 22" onclick="showInfo('info22')">
+        <div class="info" id="info22">Полистовская Евастефания Павловна: рак,15лет,12.07,рисование</div>
+    </div>
+    <div class="gallery-item" id="item23">
+        <img src="image23.jpg" alt="Image 23" onclick="showInfo('info23')">
+        <div class="info" id="info23">Пятков Никита Владимирович: весы,15лет,25.09,игры</div>
+    </div>
+    <div class="gallery-item" id="item24">
+        <img src="image24.jpg" alt="Image 24" onclick="showInfo('info24')">
+        <div class="info" id="info24">Сазонов Дмитрий Максимович: лев,15лет,22.08,велоспорт</div>
+    </div>
+    <div class="gallery-item" id="item25">
+        <img src="image25.jpg" alt="Image 25" onclick="showInfo('info25')">
+        <div class="info" id="info25">Сарибаева Айша Айтжанова: весы,15лет,08.10,музыка</div>
+    </div>
+    <div class="gallery-item" id="item26">
+        <img src="image26.jpg" alt="Image 26" onclick="showInfo('info26')">
+        <div class="info" id="info26">Скокова Алина Михайловна: рыбы,14лет,26.02,видео-игры</div>
+    </div>
+    <div class="gallery-item" id="item27">
+        <img src="image27.jpg" alt="Image 27" onclick="showInfo('info27')">
+        <div class="info" id="info27">Тайбекова Лейла Видадиевна: весы,15лет,25.09,танцы</div>
+    </div>
+    <div class="gallery-item" id="item28">
+        <img src="image28.jpg" alt="Image 28" onclick="showInfo('info28')">
+        <div class="info" id="info28">Текеева Саният Пазильевна: дева,15лет,07.09,волейбол</div>
+    </div>
+    <div class="gallery-item" id="item29">
+        <img src="image29.jpg" alt="Image 29" onclick="showInfo('info29')">
+        <div class="info" id="info29">Темiрбек Темiрлан Шабанулы: козерог,15лет,10.01,плавание,туризм</div>
+    </div>
+    <div class="gallery-item" id="item30">
+        <img src="image30.jpg" alt="Image 30" onclick="showInfo('info30')">
+        <div class="info" id="info30"> Темирбаева Эсмира Сериковна: лев,15лет,15.08,рисование</div>
+    </div>
+    <div class="gallery-item" id="item31">
+        <img src="image31.jpg" alt="Image 31" onclick="showInfo('info31')">
+        <div class="info" id="info31">Ткач Эльмира Васильевна: водолей,15лет,02.02,танцы</div>
+    </div>
+    <div class="gallery-item" id="item32">
+        <img src="image32.jpg" alt="Image 32" onclick="showInfo('info32')">
+        <div class="info" id="info32">Утепова Карина Викторовна: близнецы,15лет,09.06,прогулки</div>
+    </div>
+</div>
+
+  
+
+<script>
+    function showInfo(id) {
+        var info = document.getElementById(id);
+        if (info.style.display === "none") {
+            info.style.display = "block";
+            info.style.color = "white";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
